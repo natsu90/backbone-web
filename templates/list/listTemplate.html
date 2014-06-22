@@ -1,0 +1,22 @@
+<div class="starter-template">
+        <h1>Bootstrap starter template</h1>
+        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+		<table class="table">
+  <tr>
+    <th>User ID</th>
+    <th>Name</th>
+    <th>Office Number</th>
+    <th>Phone Number</th>
+    <th>Email</th>
+  </tr>
+  <% _.each(users, function(user) { %>
+  <tr>
+    <td><%= user.get('userId') %></td>
+    <td><%= user.get('name') %></td>
+    <td><%= user.get('officeNumber') %></td>
+    <td><%= user.get('phoneNumber') %></td>
+    <td><%= user.get('email') %></td>
+  </tr>
+  <% }); %>
+</table>
+</div>
